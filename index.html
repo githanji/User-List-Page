@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div class="container">
+        <h1 id="form-title">Add User</h1>
+        <form id="user-form">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" placeholder="Enter first name" required />
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" placeholder="Enter last name" required />
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter username" required />
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter age" required />
+            </div>
+            <div class="form-group">
+                <label for="marital-status">Marital Status:</label>
+                <select id="marital-status">
+                    <option value="unmarried">Unmarried</option>
+                    <option value="married">Married</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="is-employed">Is Employed:</label>
+                <select id="is-employed">
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="is-founder">Is Founder:</label>
+                <select id="is-founder">
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit-btn">Add User</button>
+            </div>
+        </form>
+
+        <div id="user-list"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
